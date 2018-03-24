@@ -1,4 +1,4 @@
-export class Town {
+export class town {
   id: number;
   name: string;
   icon: string;
