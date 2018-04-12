@@ -10,6 +10,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
+  github-token: ce9649ef678ace2c5d9ee4f45ec4f32609f66f41
   keep-history: true
   on:
 branch: master
