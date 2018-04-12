@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - stable
+before_script:
+   - npm install -g @angular/cli
+script:
+  - cd town
+  - npm install
+  - ng build --prod --bh /projet2-web/town
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $token
+  keep-history: true
+  on:
+branch: master
